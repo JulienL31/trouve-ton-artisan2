@@ -15,20 +15,57 @@ trouve-ton-artisan/
 ```
 ## Présentation du site
 
-Page d'accueil du site avec toujours les meilleurs artisans du site
-![Page d'accueil (desktop)](optimized_images/screenshot_1.png)
+Le site **Trouve ton artisan** permet de rechercher un artisan par spécialité ou catégorie, puis de le contacter via un formulaire. Il est responsive, rapide, et dispose d'un panneau d'administration fonctionnel.
 
-Site entièrement optimisé pour PC/mobile
-![Page d'accueil (mobile)](optimized_images/screenshot_2.png)
+---
 
-Un listing complet et entièrement paramètrable de la recherche des artisans du site
-![Listing des artisans](optimized_images/screenshot_3.png)
+### 🏠 Page d'accueil (desktop)
 
-Fiche artisan pour chaque artisan /artisans/(id de l'artisan)
-![Fiche artisan](optimized_images/screenshot_4.png)
+> Affiche les meilleurs artisans du mois, avec une interface claire.
 
-Dashboard Admin fonctionnel /admin
-![Dashboard admin](optimized_images/screenshot_5.png)
+<div align="center">
+  <img src="optimized_images/screenshot_1.png" alt="Page d'accueil (desktop)" width="800">
+</div>
+
+---
+
+### 📱 Page d'accueil (mobile)
+
+> Site totalement responsive, adapté aux smartphones.
+
+<div align="center">
+  <img src="optimized_images/screenshot_2.png" alt="Page d'accueil (mobile)" width="300">
+</div>
+
+---
+
+### 📋 Listing des artisans
+
+> Un moteur de recherche combiné à des filtres dynamiques (catégorie et spécialité).
+
+<div align="center">
+  <img src="optimized_images/screenshot_3.png" alt="Listing des artisans" width="800">
+</div>
+
+---
+
+### 🧑‍🔧 Fiche artisan
+
+> Détail complet de chaque artisan accessible depuis `/artisans/:id`.
+
+<div align="center">
+  <img src="optimized_images/screenshot_4.png" alt="Fiche artisan" width="800">
+</div>
+
+---
+
+### ⚙️ Dashboard Admin
+
+> Tableau de bord disponible à `/admin` pour ajouter, modifier ou supprimer un artisan.
+
+<div align="center">
+  <img src="optimized_images/screenshot_5.png" alt="Dashboard admin" width="800">
+</div>
 
 
 
