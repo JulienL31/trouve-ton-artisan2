@@ -51,6 +51,21 @@ Le site **Trouve ton artisan** permet de rechercher un artisan par spécialité 
 
 ### 🧑‍🔧 Fiche artisan
 
+> Envoi de formulaire `/contact`.
+
+<div align="center">
+  <img src="optimized_images/screenshot_6.png" alt="Fiche artisan" width="800">
+</div>
+
+---
+
+<div align="center">
+  <img src="optimized_images/screenshot_7.png" alt="Fiche artisan" width="800">
+</div>
+
+---
+### ✉️ Envoi de formulaire fonctionnel avec boite Formspree
+
 > Détail complet de chaque artisan accessible depuis `/artisans/:id`.
 
 <div align="center">
