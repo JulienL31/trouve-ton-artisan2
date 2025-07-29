@@ -48,10 +48,8 @@ Le site **Trouve ton artisan** permet de rechercher un artisan par spécialité 
 </div>
 
 ---
+### ✉️ Envoi de formulaire fonctionnel avec boite Formspree
 
-### 🧑‍🔧 Fiche artisan
-
-> Envoi de formulaire `/contact`.
 
 <div align="center">
   <img src="optimized_images/screenshot_6.png" alt="Fiche artisan" width="800">
@@ -64,7 +62,9 @@ Le site **Trouve ton artisan** permet de rechercher un artisan par spécialité 
 </div>
 
 ---
-### ✉️ Envoi de formulaire fonctionnel avec boite Formspree
+### 🧑‍🔧 Fiche artisan
+
+> Envoi de formulaire `/contact`.
 
 > Détail complet de chaque artisan accessible depuis `/artisans/:id`.
 
