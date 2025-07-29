@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaStar } from 'react-icons/fa';
 
 const Artisans = () => {
@@ -10,37 +10,36 @@ const Artisans = () => {
   const [specialite, setSpecialite] = useState('');
   const [categories, setCategories] = useState([]);
   const [specialites, setSpecialites] = useState([]);
+  const location = useLocation();
 
-  // 🔁 Artisans
+  // 🔍 Lecture du paramètre ?search dans l'URL
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const searchQuery = params.get('search');
+    if (searchQuery) setSearch(searchQuery);
+  }, [location.search]);
+
+  // Récupération artisans
   useEffect(() => {
     fetch('http://localhost:5000/api/artisans')
       .then(res => res.json())
-      .then(data => {
-        console.log("📦 artisans chargés :", data);
-        setArtisans(data);
-      })
+      .then(data => setArtisans(data))
       .catch(err => console.error('Erreur artisans :', err));
   }, []);
 
-  // 🔁 Catégories
+  // Récupération catégories
   useEffect(() => {
     fetch('http://localhost:5000/api/categories')
       .then(res => res.json())
-      .then(data => {
-        console.log("📦 catégories chargées :", data);
-        setCategories(data);
-      })
+      .then(data => setCategories(data))
       .catch(err => console.error('Erreur catégories :', err));
   }, []);
 
-  // 🔁 Spécialités
+  // Récupération spécialités
   useEffect(() => {
     fetch('http://localhost:5000/api/specialites')
       .then(res => res.json())
-      .then(data => {
-        console.log("📦 spécialités chargées :", data);
-        setSpecialites(data);
-      })
+      .then(data => setSpecialites(data))
       .catch(err => console.error('Erreur spécialités :', err));
   }, []);
 
@@ -50,8 +49,8 @@ const Artisans = () => {
     ));
   };
 
-  const filteredArtisans = artisans.filter(a => {
-    const matchNom = a.nom?.toLowerCase().includes(search.toLowerCase());
+  const filteredArtisans = artisans.filter((a) => {
+    const matchNom = a.nom.toLowerCase().includes(search.toLowerCase());
     const matchCategorie = !categorie || a.categorie === categorie;
     const matchSpecialite = !specialite || a.specialite?.nom === specialite;
     return matchNom && matchCategorie && matchSpecialite;
@@ -92,7 +91,7 @@ const Artisans = () => {
             <Card className="h-100 shadow-sm">
               <Card.Body>
                 <Card.Title>
-                  <Link to={`/artisans/${artisan.id}`} className="text-decoration-none">
+                  <Link to={`/artisan/${artisan.id}`} className="text-decoration-none">
                     {artisan.nom}
                   </Link>
                 </Card.Title>
