@@ -67,7 +67,21 @@ Le site **Trouve ton artisan** permet de rechercher un artisan par spécialité 
   <img src="optimized_images/screenshot_5.png" alt="Dashboard admin" width="800">
 </div>
 
+Accès au Dashboard Admin
 
+Pour accéder à l’interface d’administration du site, rendez-vous à l’adresse suivante :
+
+http://localhost:5173/admin
+
+Depuis cette page, vous pouvez :
+
+   - ✅ Ajouter un nouvel artisan
+
+   - ✏️ Modifier les informations d’un artisan existant
+
+   - 🗑️ Supprimer un artisan du site
+
+   - 💡 Cette interface est conçue pour faciliter la gestion des profils artisans, sans passer par la base de données manuellement.
 
 ## ⚙️ Backend
 
