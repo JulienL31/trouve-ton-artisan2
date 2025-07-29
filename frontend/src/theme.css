@@ -1,0 +1,44 @@
+:root {
+  --clr-bg: #f1f8fc;
+  --clr-primary: #0074c7;
+  --clr-primary-dark: #00497c;
+  --clr-text: #384050;
+  --clr-danger: #cd2c2e;
+  --clr-success: #82b864;
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+a {
+  color: var(--clr-primary);
+}
+a:hover {
+  color: var(--clr-primary-dark);
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary-dark);
+}
+.btn-primary:hover {
+  background-color: var(--clr-primary-dark);
+  border-color: var(--clr-primary-dark);
+}
+
+.section-title {
+  color: var(--clr-primary-dark);
+  font-weight: 600;
+}
+
+.card-title {
+  color: var(--clr-primary-dark);
+}
+
+footer {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}

@@ -1,0 +1,14 @@
+.main-container {
+  min-height: calc(100vh - 120px); // header + footer estimé
+  background-color: #f8fcff; // doux fond bleu très clair
+  padding: 2rem 1rem;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
