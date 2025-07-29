@@ -13,6 +13,24 @@ trouve-ton-artisan/
 ├── .gitignore
 ├── .gitattributes
 ```
+## Présentation du site
+
+Page d'accueil du site avec toujours les meilleurs artisans du site
+![Page d'accueil (desktop)](optimized_images/screenshot_1.png)
+
+Site entièrement optimisé pour PC/mobile
+![Page d'accueil (mobile)](optimized_images/screenshot_2.png)
+
+Un listing complet et entièrement paramètrable de la recherche des artisans du site
+![Listing des artisans](optimized_images/screenshot_3.png)
+
+Fiche artisan pour chaque artisan /artisans/(id de l'artisan)
+![Fiche artisan](optimized_images/screenshot_4.png)
+
+Dashboard Admin fonctionnel /admin
+![Dashboard admin](optimized_images/screenshot_5.png)
+
+
 
 ## ⚙️ Backend
 
