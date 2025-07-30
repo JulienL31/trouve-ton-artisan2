@@ -12,6 +12,7 @@ trouve-ton-artisan/
 │   └── schema.sql         # Schéma de la base de données
 ├── .gitignore
 ├── .gitattributes
+├── annexe
 ```
 ## Présentation du site
 
@@ -169,3 +170,8 @@ mysql -u root -p trouve < sql/insert.sql
 - 🔍 Filtres dynamiques
 - 📬 Formulaire de contact (Formspree)
 - 🗃️ Architecture claire et modulaire
+
+## 📁 Dossier annexe
+
+- Dossier Figma du projet
+- PDF d'explication du projet
