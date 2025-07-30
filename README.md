@@ -12,7 +12,7 @@ trouve-ton-artisan/
 │   └── schema.sql         # Schéma de la base de données
 ├── .gitignore
 ├── .gitattributes
-├── annexe
+├── annexe                 # PDF + FIGMA
 ```
 ## Présentation du site
 
