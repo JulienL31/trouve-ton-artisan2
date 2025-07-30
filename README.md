@@ -114,7 +114,7 @@ Routes principales :
 La configuration de la BDD est dans `.env`. Exemple :
 ```
 DB_HOST=localhost
-DB_NAME=trouve
+DB_NAME=trouve_ton_artisan
 DB_USER=root
 DB_PASSWORD=Admin
 FRONT_URL=http://localhost:5173

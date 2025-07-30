@@ -3,9 +3,6 @@ import { useParams, Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaStar } from 'react-icons/fa';
 
-import photo1 from '../assets/images/photo1.jpg';
-import photo2 from '../assets/images/photo2.jpg';
-import photo3 from '../assets/images/photo3.jpg';
 
 const ArtisanDetails = () => {
   const { id } = useParams();
@@ -27,14 +24,19 @@ const ArtisanDetails = () => {
     ));
   };
 
-  const getArtisanPhoto = (photo) => {
-    switch (photo) {
-      case 'photo1.jpg': return photo1;
-      case 'photo2.jpg': return photo2;
-      case 'photo3.jpg': return photo3;
-      default: return photo1;
-    }
+  const getArtisanPhoto = () => {
+    let result = '/src/assets/images/photo';
+
+    if (artisan.photo)
+      result += artisan.photo.toString();
+    else
+      result += ((artisan.id % 3) + 1).toString();
+
+    result += '.jpg';
+    
+    return result;
   };
+
 
   if (!artisan) {
     return (

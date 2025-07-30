@@ -57,14 +57,14 @@ const Home = () => {
             artisans.map((artisan) => (
               <Col md={4} key={artisan.id}>
                 <Link
-                  to={`/artisan/${artisan.id}`}
+                  to={`/artisans/${artisan.id}`}
                   className="text-decoration-none text-dark"
                 >
                   <Card className="h-100 shadow-sm">
                     <Card.Body>
                       <Card.Img
                         variant="top"
-                        src={artisan.photo || "/src/assets/images/photo1.jpg"}
+                        src = { `/src/assets/images/photo${(artisan.photo ? artisan.photo : (artisan.id % 3) + 1)}.jpg` }
                         alt={artisan.nom}
                       />
                       <Card.Title>{artisan.nom}</Card.Title>

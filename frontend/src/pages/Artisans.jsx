@@ -91,7 +91,7 @@ const Artisans = () => {
             <Card className="h-100 shadow-sm">
               <Card.Body>
                 <Card.Title>
-                  <Link to={`/artisan/${artisan.id}`} className="text-decoration-none">
+                  <Link to={`/artisans/${artisan.id}`} className="text-decoration-none">
                     {artisan.nom}
                   </Link>
                 </Card.Title>
